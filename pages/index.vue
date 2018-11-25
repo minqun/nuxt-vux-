@@ -1,6 +1,7 @@
 <template>
+<div> 
+  <button @click="$store.commit('increment')">{{num}}</button>
   <section >
-    
       <card :header="{title: ('My wallet')}">
       <div slot="content" class="card-demo-flex card-demo-content01">
         <div class="vux-1px-r">
@@ -14,7 +15,7 @@
           {{ ('Coupon') }}
         </div>
         <div class="vux-1px-r">
-          <span>0</span>
+        
           <br/>
           {{ ('Gift card') }}
         </div>
@@ -25,22 +26,35 @@
         </div>
       </div>
     </card>
-
   </section>
+</div>
 </template>
 
 <script>
-import {Card} from 'vux'
-
+import { Card } from "vux";
+// import axios from "axios";
 export default {
+  async asyncData(context) {
+    // called every time before loading the component\
+
+    // let data = await axios.get(`https://m.novelcamp.net/book/chapter`, {
+    //   chapterSequence: 1,
+    //   bookId: 11279
+    // });
+    console.log(context.store);
+    // context.store.commit("increment", data.data.data.chapterSequence);
+
+    return { num: context.store.state.counter };
+  },
   components: {
     Card
-  }
-}
+  },
+  methods: {}
+};
 </script>
 
 <style scoped lang="less">
-@import '~vux/src/styles/1px.less';
+@import "~vux/src/styles/1px.less";
 .card-demo-flex {
   display: flex;
 }
