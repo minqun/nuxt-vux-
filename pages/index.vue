@@ -55,6 +55,9 @@ export default {
 
 <style scoped lang="less">
 @import "~vux/src/styles/1px.less";
+@font-color: #2b2b2b;
+@base-color: #1b88ee;
+
 .card-demo-flex {
   display: flex;
 }

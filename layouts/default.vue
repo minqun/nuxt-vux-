@@ -4,7 +4,11 @@
   </div>
 </template>
 
-<style>
+<style lang="less">
+@import "~vux/src/styles/reset.less";
+@import "~vux/src/styles/1px.less";
+@import "~vux/src/styles/tap.less";
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;

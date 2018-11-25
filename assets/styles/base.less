@@ -1,0 +1,75 @@
+/*
+ * 全局样式
+*/
+@import './theme.less';
+
+ul,li {
+  list-style-type: none;
+}
+.default-img-bg {
+  background: #ccc;
+}
+a {
+  color: @base-color;
+  -webkit-tap-highlight-color: transparent; //移除在移动端点击时显示的底色
+}
+.page-wrap {
+  // padding-top: 46px;
+  // padding-bottom: 46px;
+  .weui_cells_radio .weui_check:checked + .weui_icon_checked:before {
+    color: @base-color
+  }
+}
+.weui-loadmore {
+  top: 0!important;
+  margin: 20px auto!important;
+  position: relative!important;
+}
+.com-dot {
+  & > a {
+    & > i {
+      width: 8px!important;
+      height: 8px!important;
+      border-radius: 50%!important;
+      background-color: #fff!important;
+      &.active {
+        background-color: #ff6600!important;
+      }
+    }
+  }
+}
+.base-btn {
+  width:100%;
+  box-sizing: border-box !important;
+  margin-top: 40px;
+  color: #fff !important;
+}
+.dp-header .dp-item.dp-left, 
+.dp-header .dp-item.dp-right {
+   color: @base-color !important;
+}
+.u-p10 {
+  padding: 0 10px;
+}
+.m-btn-bg {
+  &.weui-btn {
+    width: inherit;
+    border-radius: 40px;
+    padding: 3px 50px;
+  }
+  &.weui-btn:after {
+    border-radius: 40px;
+  }
+}
+.ads-box {
+  margin: .32rem auto;
+  text-align: center;
+  &.no-tomargin {
+    margin-top: 0!important;
+  }
+  .adsbygoogle {
+    // background: url(../assets/t1.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0 auto!important;
+  }
+}

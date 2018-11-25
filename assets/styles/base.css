@@ -1,0 +1,96 @@
+/*
+ * 全局样式
+*/
+/**
+* Header
+*/
+/**
+* tabbar
+*/
+/**
+* tab
+*/
+/**
+* Button
+*/
+/**
+* dialog
+*/
+/**
+* checklist
+*/
+/**
+* checkbox
+*/
+/**
+* check-icon
+*/
+/**
+* radio
+*/
+/*
+* search
+*/
+/*
+* font-color
+*/
+ul,
+li {
+  list-style-type: none;
+}
+.default-img-bg {
+  background: #ccc;
+}
+a {
+  color: #1b88ee;
+  -webkit-tap-highlight-color: transparent;
+}
+.page-wrap .weui_cells_radio .weui_check:checked + .weui_icon_checked:before {
+  color: #1b88ee;
+}
+.weui-loadmore {
+  top: 0!important;
+  margin: 20px auto!important;
+  position: relative!important;
+}
+.com-dot > a > i {
+  width: 8px!important;
+  height: 8px!important;
+  border-radius: 50%!important;
+  background-color: #fff!important;
+}
+.com-dot > a > i.active {
+  background-color: #ff6600!important;
+}
+.base-btn {
+  width: 100%;
+  box-sizing: border-box !important;
+  margin-top: 40px;
+  color: #fff !important;
+}
+.dp-header .dp-item.dp-left,
+.dp-header .dp-item.dp-right {
+  color: #1b88ee !important;
+}
+.u-p10 {
+  padding: 0 10px;
+}
+.m-btn-bg.weui-btn {
+  width: inherit;
+  border-radius: 40px;
+  padding: 3px 50px;
+}
+.m-btn-bg.weui-btn:after {
+  border-radius: 40px;
+}
+.ads-box {
+  margin: .32rem auto;
+  text-align: center;
+}
+.ads-box.no-tomargin {
+  margin-top: 0!important;
+}
+.ads-box .adsbygoogle {
+  background-size: 100%;
+  margin: 0 auto!important;
+}
